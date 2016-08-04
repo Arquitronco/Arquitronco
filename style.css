@@ -1,0 +1,105 @@
+body{
+    font-family: Helvetica,sans-serif;
+        background-image: url("backcity.jpg");
+            background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+}
+h1{
+    margin-top: 50px;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 100px;
+
+}
+
+h4{
+    color:white;
+}
+.banner{
+    background-color: #4C433F;
+    color:white;
+}
+hr{
+  background-color:#4C433F;
+   display: block;
+   height: 1px;
+   border: 0;
+   margin: 1em 0;
+   padding: 0; 
+}
+.nav-brand{
+    color:white;
+    background-color: #77B63C;
+}
+
+.nav-brand:hover{
+    color:white;
+}
+
+.a-nav{
+    color: white;
+}
+
+
+.a-nav:hover{
+    color: #77B63C;
+}
+
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #4C433F;
+}
+
+
+.container{
+    width:100%;
+    padding: 200px 0px 200px 0px;
+    display: table;
+    margin: 0 auto;
+}
+
+
+.top-container{
+    margin-top:35px;
+    padding: 150px 0px 250px 0px;
+
+}
+.mainLogo{
+    margin:auto;
+    display: block;
+}
+.about-container{
+    color:white;
+    background-color: #77B63C;
+}
+.contact-container{
+    padding: 20px;
+    color:white;
+    background-color: #77B63C;
+
+}
+
+.gallery-container{
+    padding: 2px;
+    margin:0px;
+    
+
+}
+.house-img{
+    margin:auto;
+}
+.img-margin{
+    background-color: #4C433F;
+    padding:2px;
+    margin:30px auto 30px 40px;
+
+}
+.btn{
+color:teal;
+}
+.content-container{
+    display: table-cell;
+    vertical-align: middle;
+}
