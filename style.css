@@ -96,10 +96,17 @@ hr{
     margin:30px auto 30px 40px;
 
 }
+.img-btn{
+    background-color: #4C433F;
+}
 .btn{
 color:teal;
 }
 .content-container{
     display: table-cell;
     vertical-align: middle;
+}
+
+.modal-title{
+    color:black;
 }

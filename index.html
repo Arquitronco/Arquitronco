@@ -3,19 +3,10 @@
 
 <head>
     <title>Arquitronco</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-    <!-- Latest compiled JavaScript -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -51,10 +42,99 @@
             <div class="row banner">
                 <h3>PROYECTOS</h3>
             </div>
-            <div class="row">
-                <div class="col-xs-2 img-margin">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Casa 1 -->
+        <div class="col-xs-2 img-margin">
+
+            <button type="button" class="img-btn" data-toggle="modal" data-target="#myModal1">
                     <img class="img-responsive house-img" src="casatest.jpg">
                     <h4 class="text-center">Casa tal1</h4>
+                
+        </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal1" role="dialog">
+                <div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Casa tal1</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <img class="img-responsive" src="casatest.jpg">
+                                        <h4>casa tal1</h4>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        Texto de la casa
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Casa 2 -->
+        <div class="col-xs-2 img-margin">
+
+            <button type="button" class="img-btn" data-toggle="modal" data-target="#myModal2">
+                    <img class="img-responsive house-img" src="casatest.jpg">
+                    <h4 class="text-center">Casa tal2 </h4>
+                
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+                <div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Casa tal 2</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <img class="img-responsive" src="casatest.jpg">
+                                        <h4>casa tal2</h4>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        Texto de la casa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+            <div class="row">
+                <div class="col-xs-2 img-margin">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                    <img class="img-responsive house-img" src="casatest.jpg">
+                    <h4 class="text-center">Casa tal1</h4>
+                     </button>
+                     
                 </div>
                 <div class="col-xs-2 img-margin">
                     <img class="img-responsive house-img" src="casatest.jpg">
@@ -75,7 +155,7 @@
             </div>
         </div>
     </div>
-
+-->
     <div id="contact" class="container contact-container">
 
         <h2 class="text-center">CONTACT US</h2>
