@@ -1,10 +1,14 @@
 body{
     font-family: Helvetica,sans-serif;
-        background-image: url("backcity.jpg");
-            background-repeat: no-repeat;
+    background-image: url("backcity.jpg");
+     background-repeat: no-repeat;
     background-attachment: fixed;
-    width:100%;
-}
+    background-size:cover;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+    }
 h1{
     margin-top: 50px;
     vertical-align: middle;
@@ -109,4 +113,16 @@ color:teal;
 
 .modal-title{
     color:black;
+}
+.modal-body{
+    margin:0px;
+    padding:0px;
+}
+.filler{
+    background-color: #77B63C;
+}
+.filler:after{
+  content: "";
+  display: block;
+  padding-bottom: 133%;
 }
