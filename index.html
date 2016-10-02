@@ -5,200 +5,177 @@
     <title>Arquitronco</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-custom">
-        <div class="container-fluid">
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand nav-brand" href="#">ArquiTron</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a class="a-nav" href="#">Home</a></li>
-                <li><a class="a-nav" href="#about">About</a></li>
-                <li><a class="a-nav" href="#gallery">Galley</a></li>
-                <li><a class="a-nav" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="top" class="container top-container">
-        <img class="mainLogo img-responsive" src="logo_sinfondo.png" width="500" height="300">
-    </div>
-
-    <div id="about" class="container about-container">
-        <div class="content-container text-center">
-            <h3>QUIENES SOMOS</h3>
-            <hr>
-        </div>
-    </div>
-
-    <div id="gallery" class="container gallery-container">
-        <div class="content-container text-center">
-            <div class="row banner">
-                <h3>PROYECTOS</h3>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Casa 1 -->
-        <div class="col-xs-2 img-margin">
-
-            <button type="button" class="img-btn" data-toggle="modal" data-target="#myModal1">
-                    <img class="img-responsive house-img" src="./cuerna/IMG_9463.jpg">
-                    <h4 class="text-center">Casa Paraiso</h4>
-                
-        </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal1" role="dialog">
-                <div>
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Casa Paraiso</h4>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="row">
-                                <img class="col-xs-4 img-responsive" src="./cuerna/IMG_9463.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_8337.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_1004.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_8355.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_8358.jpg">
-                            </div>
-                            <div class="row">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_6943.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_8367.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_9473.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_9478.jpg">
-                                <img class="col-xs-2 img-responsive" src="./cuerna/IMG_9771.jpg">
-                                <div class="col-xs-2 filler"></div>
-                            </div>
-                            <hr>
-                            <div>
-                                <h2 class="text-center">Casa Paraiso - Cuernavaca Morelos</h2>
-
-                            </div>
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Casa 2 -->
-        <div class="col-xs-2 img-margin">
-
-            <button type="button" class="img-btn" data-toggle="modal" data-target="#myModal2">
-                    <img class="img-responsive house-img" src="./aralia/IMG_1005.jpg">
-                    <h4 class="text-center">Jardín Aralia </h4>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
                 
             </button>
+                <a class="navbar-brand brands" href="#">ARQUITRON</a>
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModal2" role="dialog">
-                <div>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-collapsible">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="smoothScroll" href="#section1">Inicio</a></li>
+                    <li><a class="smoothScroll" href="#section2">Next</a></li>
+                    <li><a class="smoothScroll" href="#section3">Galería</a></li>
+                    <li><a class="smoothScroll" href="#section4">Contacto</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Jardín Aralia</h4>
-                        </div>
-                        <div class="modal-body">
+    <section class="container-fluid" id="section1">
+        <div class="v-center ">
+            <img class="img-responsive mainLogo" src="images/logo_sinfondo2.png" width="500" height="300">
 
-                            <div class="row">
-                                <img class="col-xs-3 img-responsive" src="./aralia/IMG_1005.jpg">
-                                <img class="col-xs-2 img-responsive" src="./aralia/IMG_0680.jpg">
-                                <img class="col-xs-2 img-responsive" src="./aralia/IMG_0698.jpg">
-                                <img class="col-xs-2 img-responsive" src="./aralia/IMG_0699.jpg">
-                                <img class="col-xs-3 img-responsive" src="./aralia/IMG_0993.jpg">
+        </div>
+        <a class="smoothScroll" href="#section2">
+            <div class="scroll-down bounceInDown animated">
+                <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+            </div>
+        </a>
+    </section>
+
+    <section class="container-fluid" id="section2">
+        <div class="container v-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="panel panel-default slideInLeft animate">
+                                <div class="panel-heading">
+                                    <h3>Robust</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>There is other content and snippets of details or features that can be placed here..</p>
+                                    <hr>GO
+                                    <hr>
+                                </div>
                             </div>
-                            <hr>
-                            <div>
-                                <h2 class="text-center">Jardín Aralia - San Angel Ciudad de México</h2>
-
-                            </div>
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="panel panel-default slideInUp animate">
+                                <div class="panel-heading">
+                                    <h3>Simple</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>There is other content and snippets of details or features that can be placed here..</p>
+                                    <hr>GO
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="panel panel-default slideInRight animate">
+                                <div class="panel-heading">
+                                    <h3>Clean</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>There is other content and snippets of details or features that can be placed here..</p>
+                                    <hr>GO
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- 
+            <!--/row-->
             <div class="row">
-                <div class="col-xs-2 img-margin">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-                    <img class="img-responsive house-img" src="casatest.jpg">
-                    <h4 class="text-center">Casa tal1</h4>
-                     </button>
-                     
+                <br>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class=" text-center">
+            <h2 class="lato sectionbanner">GALERÍA</h2>
+        </div>
+        <div class="container ">
+            <div class="row galdivrow ">
+                <div class="col-lg-4 galdiv">
+                    <a class="galopt" href="arquitectura.html"><img class="img-responsive" src="images/galopt/arquitectura.jpg"></a>
                 </div>
-                <div class="col-xs-2 img-margin">
-                    <img class="img-responsive house-img" src="casatest.jpg">
-                    <h4 class="text-center">Casa tal 2</h4>
+                <div class="col-lg-4 galdiv">
+                    <a class="galopt" href="interiores.html"><img class="img-responsive" src="images/galopt/interiores.jpg"></a>
                 </div>
-                <div class="col-xs-2 img-margin">
-                    <img class="img-responsive house-img" src="casatest.jpg">
-                    <h4 class="text-center">Casa tal 3</h4>
-                </div>
-                <div class="col-xs-2 img-margin">
-                    <img class="img-responsive house-img" src="casatest.jpg">
-                    <h4 class="text-center">Casa tal 4</h4>
-                </div>
-                <div class="col-xs-2 img-margin">
-                    <img class="img-responsive house-img" src="casatest.jpg">
-                    <h4 class="text-center">Casa tal 5</h4>
+                <div class="col-lg-4 galdiv">
+                    <a class="galopt" href="exteriores.html"><img class="img-responsive" src="images/galopt/paisaje.jpg"></a>
                 </div>
             </div>
         </div>
-    </div>
--->
-    <div id="contact" class="container contact-container">
-
-        <h2 class="text-center">CONTACT US</h2>
+    </section>
+    <section id="section4">
+        <div class=" text-center">
+            <h2 class="lato sectionbanner">CONTACTO</h2>
+        </div>
         <hr>
-        <div class="row text-left">
-
-            <div class="col-md-5 col-md-offset-1">
-                <div>Name: <input id="name" type="text" class="form-control" placeholder="Name"></div>
-                <div>E-mail: <input id="email" type="text" class="form-control" placeholder="Email"></div>
-                <div>Comment: <textarea id="comment" class="form-control" rows="3" placeholder="Comment"></textarea></div>
-                <div>
-                    </br>
-                    <button class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Submit</button>
+        <div class="container lato">
+            <div class="row contactrow">
+                <div class="col-lg-6">
+                    <div>Nombre: <input id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
+                    <div>E-mail: <input id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
+                    <div>Teléfono<input id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
+                    <div>Comentario: <textarea id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
+                    <div>
+                        </br>
+                        <button class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 datos">
+                    
+                    <h3>Nuestros datos:</h3>
+                    <div>
+                    Arq. Fulanito
+                    <br>
+                    Teléfono: 55-555555
+                    <br>
+                    E-mail: correo@dominio.org
+                    <br><br>
+                    Arq. Fulanita
+                    <br>
+                   E-mail: correo@dominio.org
+                    <br>
+                    Teléfono: 55-555555
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-1">
-                Send me any comments. Do you want to know more about me?, Have a proyect you want to talk about?, Help in a code,Just want
-                to chat, go ahead.
-            </div>
         </div>
+    </section>
+    <div class="scroll-up">
+        <a class="smoothScroll" href="#section1"><i class="fa fa-angle-up"></i></a>
     </div>
-
-    <footer class="text-center banner">
-        <p>Written and coded by Arturo Alvarado.
-        </p>
+    <footer>
+        <div class="text-center">Arquitronco © Aviso de privacidad</div>
     </footer>
-    <hr>
 </body>
 
 </html>
