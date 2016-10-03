@@ -22,6 +22,8 @@
       emailjs.init("user_VOV4FQ7vGvtg2i4MegLOy");
    })();
 </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -154,9 +156,12 @@
                         <div>Teléfono<input id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
                         <div>Comentario: <textarea id="comment" class="form-control" rows="5" placeholder="Comentario*" required></textarea></div>
                         <div>
+                            <div class="g-recaptcha" data-sitekey="6LeLSggUAAAAANdKgUAHUhmew2kbfvCzVC5_0ee3"></div>
+
                             </br>
                             <button type="button" id="submit" onclick="sendEmail()" value="sumbit" class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
                         </div>
+
                     </form>
                     <script src="js/correo.js"></script>
 
