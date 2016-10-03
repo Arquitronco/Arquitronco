@@ -11,10 +11,11 @@ function sendEmail() {
         }
     }
     var v= grecaptcha.getResponse();
+    console.log(v.length);
     if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "")&& v.length!== 0 ) {
+console.log("mando correo");
 
-
-        emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
+       /* emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
             .then(function (response) {
                 $("input").val("");
                 $("textarea").val("");
@@ -31,7 +32,7 @@ function sendEmail() {
             }, function (err) {
                 alert("Ha ocurrido un problema, intente mas tarde");
             });
-
+*/
 
     } else {
         if (nameInput == "") {
