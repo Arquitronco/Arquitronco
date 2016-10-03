@@ -141,30 +141,27 @@
         <div class="container lato">
             <div class="row contactrow">
                 <div class="col-lg-6">
-                    <div>Nombre: <input id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
-                    <div>E-mail: <input id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
-                    <div>Teléfono<input id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
-                    <div>Comentario: <textarea id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
-                    <div>
-                        </br>
-                        <button class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
-                    </div>
+                    <form action="contact.php" method="post">
+                        <div>Nombre: <input name="name" id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
+                        <div>E-mail: <input name="email" id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
+                        <div>Teléfono<input name="phone" id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
+                        <div>Comentario: <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
+                        <div>
+                            </br>
+                            <button type="submit" id="submit" name="submit" value="sumbit"  formmethod="post" class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-6 datos">
-                    
+
                     <h3>Nuestros datos:</h3>
                     <div>
-                    Arq. Fulanito
-                    <br>
-                    Teléfono: 55-555555
-                    <br>
-                    E-mail: correo@dominio.org
-                    <br><br>
-                    Arq. Fulanita
-                    <br>
-                   E-mail: correo@dominio.org
-                    <br>
-                    Teléfono: 55-555555
+                        Arq. Fulanito
+                        <br> Teléfono: 55-555555
+                        <br> E-mail: correo@dominio.org
+                        <br><br> Arq. Fulanita
+                        <br> E-mail: correo@dominio.org
+                        <br> Teléfono: 55-555555
                     </div>
                 </div>
             </div>
