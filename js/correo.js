@@ -10,7 +10,8 @@ function sendEmail() {
             emailInput = "";
         }
     }
-    if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "")) {
+    var v= grecaptcha.getResponse();
+    if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "")&& v.length!== 0 ) {
 
 
         emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
