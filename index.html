@@ -15,6 +15,15 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    
+   (function(){
+      emailjs.init("user_VOV4FQ7vGvtg2i4MegLOy");
+   })();
+
+</script>
+<script src="js/correo.js"></script>
 </head>
 
 <body>
@@ -141,16 +150,17 @@
         <div class="container lato">
             <div class="row contactrow">
                 <div class="col-lg-6">
-                    <form action="contact.php" method="post">
-                        <div>Nombre: <input name="name" id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
-                        <div>E-mail: <input name="email" id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
-                        <div>Teléfono<input name="phone" id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
-                        <div>Comentario: <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
+                    <form id="contact" action="#">
+                        <div>Nombre: <input  id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
+                        <div>E-mail: <input  id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
+                        <div>Teléfono<input id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
+                        <div>Comentario: <textarea  id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
                         <div>
                             </br>
-                            <button type="submit" id="submit" name="submit" value="sumbit"  formmethod="post" class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
+                            <button type="button" id="submit" onclick="sendEmail()" value="sumbit" class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
                         </div>
                     </form>
+
                 </div>
                 <div class="col-lg-6 datos">
 
