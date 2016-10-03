@@ -7,5 +7,5 @@ function sendEmail() {
     $("input").val("");
     $("textarea").val("");
     alert("Gracias por contactarnos, le responderemos lo mas pronto posible.");
-    // emailjs.send("default_service","arquitronco",{name:nameInput, phone:phoneInput,email:emailInput,comment:commentInput});
+     emailjs.send("default_service","arquitronco",{name:nameInput, phone:phoneInput,email:emailInput,comment:commentInput});
 }
