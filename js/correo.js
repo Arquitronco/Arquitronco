@@ -12,24 +12,25 @@ function sendEmail() {
     }
     if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "")) {
 
-        if ($("input").hasClass("invalid-border")) {
-            $("input").removeClass("invalid-border");
-        }
 
-        if ($("#comment").hasClass("invalid-border")) {
-            $("#comment").removeClass("invalid-border");
-        }
-       emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
+        emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
             .then(function (response) {
                 $("input").val("");
                 $("textarea").val("");
+                if ($("input").hasClass("invalid-border")) {
+                    $("input").removeClass("invalid-border");
+                }
+
+                if ($("#comment").hasClass("invalid-border")) {
+                    $("#comment").removeClass("invalid-border");
+                }
                 alert("Gracias por contactarnos, le responderemos lo mas pronto posible.");
                 emailjs.send("default_service", "arquitronco2", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput });
 
             }, function (err) {
                 alert("Ha ocurrido un problema, intente mas tarde");
             });
-            
+
 
     } else {
         if (nameInput == "") {
