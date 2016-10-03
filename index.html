@@ -17,13 +17,10 @@
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-    
    (function(){
       emailjs.init("user_VOV4FQ7vGvtg2i4MegLOy");
    })();
-
 </script>
-<script src="js/correo.js"></script>
 </head>
 
 <body>
@@ -151,15 +148,16 @@
             <div class="row contactrow">
                 <div class="col-lg-6">
                     <form id="contact" action="#">
-                        <div>Nombre: <input  id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
-                        <div>E-mail: <input  id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
+                        <div>Nombre: <input id="name" type="text" class="form-control" placeholder="Nombre*"></div><br>
+                        <div>E-mail: <input id="email" type="text" class="form-control" placeholder="E-mail*"></div><br>
                         <div>Teléfono<input id="phone" type="text" class="form-control" placeholder="55-555-555"></div><br>
-                        <div>Comentario: <textarea  id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
+                        <div>Comentario: <textarea id="comment" class="form-control" rows="5" placeholder="Comentario*"></textarea></div>
                         <div>
                             </br>
                             <button type="button" id="submit" onclick="sendEmail()" value="sumbit" class="btn colored-btn"><span class="glyphicon glyphicon-send"></span> Enviar</button>
                         </div>
                     </form>
+                    <script src="js/correo.js"></script>
 
                 </div>
                 <div class="col-lg-6 datos">
