@@ -315,3 +315,6 @@ hr{
         margin:50px;
     }
 }
+.invalid-border{
+    border: #FF0000 1px solid;
+}
