@@ -1,9 +1,9 @@
 <?php
-if(isset($_GET('submit'))){
-    $msg="Nombre: ".$_GET["name"]."\n"
-        ."E-mail: ".$_GET["email"]."\n"
-        ."Telefono: ".$_GET"phone"]."\n"
-        ."Comentario: ".$_GET["email"];
+if(isset($_POST('submit'))){
+    $msg="Nombre: ".$_POST["name"]."\n"
+        ."E-mail: ".$_POST["email"]."\n"
+        ."Telefono: ".$_POST["phone"]."\n"
+        ."Comentario: ".$_POST["email"];
     $to="turi.arturo@gmail.com";
     $subject="test mail";
     $header="From:some@domain.com\r\n";
