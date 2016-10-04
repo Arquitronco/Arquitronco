@@ -318,3 +318,11 @@ hr{
 .invalid-border{
     border: #FF0000 1px solid;
 }
+
+.waitScreen{
+    display: none;
+    
+}
+.modal-header{
+    color: #77B63C;
+}

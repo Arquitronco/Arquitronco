@@ -10,11 +10,12 @@ function sendEmail() {
             emailInput = "";
         }
     }
-    var v= grecaptcha.getResponse();
+    var v = grecaptcha.getResponse();
     console.log(v.length);
-    if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "")&& v.length!== 0 ) {
-console.log("mando correo");
 
+    if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "") && v.length !== 0) {
+        console.log("mando correo");
+        $('#submit').prop('disabled', true);
         emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
             .then(function (response) {
                 $("input").val("");
@@ -26,11 +27,16 @@ console.log("mando correo");
                 if ($("#comment").hasClass("invalid-border")) {
                     $("#comment").removeClass("invalid-border");
                 }
-                alert("Gracias por contactarnos, le responderemos lo mas pronto posible.");
+                $('#submit').prop('disabled', false);
+
+                $('#confirm-modal').modal('show');
+
                 emailjs.send("default_service", "arquitronco2", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput });
 
             }, function (err) {
-                alert("Ha ocurrido un problema, intente mas tarde");
+                $('#submit').prop('disabled', false);
+                $('#confirm-error').modal('show');
+
             });
 
 
@@ -46,10 +52,11 @@ console.log("mando correo");
         if (commentInput == "") {
             $("textarea").addClass("invalid-border");
         }
-        if(v.length==0){
+        if (v.length == 0) {
             $(".g-recaptcha").addClass("invali-border");
         }
-        alert("Ingrese por lo menos su nombre, correo electrónico válido o teléfono, y un comentario");
+        $('#error-modal').modal('show');
+
     }
 }
 function isValidEmailAddress(emailAddress) {
