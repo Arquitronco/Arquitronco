@@ -3,13 +3,17 @@
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/BGRA0KYCD8.jpg');
+    background:center no-repeat fixed url('../images/fondo2.jpg');
     background-size: cover;
     color:#444;
     font-family: 'Lato',Helvetica,sans-serif;
 }
 
-@media (min-width:768px) {
+@media (min-width:800px) {
+    html,body{
+            background:center no-repeat fixed url('../images/fondo1.jpg');
+
+    }
     h1 {
         font-size:68px;
     }
@@ -87,7 +91,7 @@ a:hover {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
 }
 
-@media (min-width:768px) {
+@media (min-width:800px) {
 
 .navbar-nav {
     display:table;
@@ -152,7 +156,7 @@ section {
     transform-style: preserve-3d;
 }
 
-@media (min-width:768px) {
+@media (min-width:800px) {
     .v-center {
         height: 50%;
         overflow: visible;
@@ -253,7 +257,8 @@ footer .nav>li>a:hover {
 .banner{
     margin-top:50px;
     padding:20px;
-
+    display:block;
+    background-color: #eee;
 }
 
 .modal-body > .img-responsive{
@@ -310,7 +315,7 @@ hr{
     font-size: 20px;
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
     .galdiv{
         margin:50px;
     }

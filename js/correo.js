@@ -14,7 +14,6 @@ function sendEmail() {
     console.log(v.length);
 
     if (nameInput !== "" && commentInput !== "" && (emailInput !== "" || phoneInput !== "") && v.length !== 0) {
-        console.log("mando correo");
         $('#submit').prop('disabled', true);
         emailjs.send("default_service", "arquitronco", { name: nameInput, phone: phoneInput, email: emailInput, comment: commentInput })
             .then(function (response) {
