@@ -38,9 +38,9 @@ $(function () {
     }
   });
   window.sr = ScrollReveal({ reset: true });
-  sr.reveal('.box', { duration: 300 });
-  sr.reveal('.banner', { duration: 300 });
-  sr.reveal('.sectionbanner', { duration: 300 });
+  sr.reveal('.box', { duration: 200 });
+  sr.reveal('.banner', { duration: 200 });
+  sr.reveal('.sectionbanner', { duration: 200 });
 
-  sr.reveal('.galdiv',{duration:300});
+  sr.reveal('.galdiv',{duration:200});
 });
