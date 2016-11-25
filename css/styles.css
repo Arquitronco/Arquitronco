@@ -17,7 +17,9 @@ html,body {
         font-size:68px;
     }
 }
-
+img{
+    image-orientation: from-image;
+}
 a {
     color:#999;
 }
