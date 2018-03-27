@@ -28,7 +28,20 @@
         })();
     </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="lightSlider/js/lightslider.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="lightSlider/css/lightslider.min.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#content-slider").lightSlider({
+                item: 7,
+                loop: true,
+                auto:true,
+                controls: false,
+                pager: false
+            });
 
+        });
+    </script>
 </head>
 
 <body>
@@ -163,6 +176,53 @@
             </div>
         </div>
     </section>
+    <div class="carouselDiv">
+        <div class=" text-center">
+            <h2 class="lato sectionbanner">CLIENTES</h2>
+            <hr>
+        </div>
+        <div class="item">
+            <ul id="content-slider" class="content-slider">
+                <li>
+                    <img class="img-responsive" src="images/clientes/2.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/6.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/aztlan.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/banco azteca.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/banco famsa.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/cerveceria.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/famsa.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/iusacell.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/kyocera.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/nyssen.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/oxxo.png"></img>
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/clientes/wurth.png"></img>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <section id="section3">
         <div class=" text-center">
             <h2 class="lato sectionbanner">GALERÍA</h2>
@@ -228,8 +288,10 @@
 
                     <h3>Nuestros datos:</h3>
                     <div>
-                        <br>E-mail: arquitronco@gmail.com<br>
-                        <br>Direccion : Andes 104-2 CP 62157. Cuernavaca Morelos<br>
+                        <br>E-mail: arquitronco@gmail.com
+                        <br>
+                        <br>Direccion : Andes 104-2 CP 62157. Cuernavaca Morelos
+                        <br>
                         <br>Telefono: 777 364 34 97 oficina
                     </div>
                 </div>
@@ -290,6 +352,8 @@
     <footer>
         <div class="text-center">Arquitronco © Aviso de privacidad</div>
     </footer>
+    <script src="js/carousel.js"></script>
+
 </body>
 
 </html>

@@ -179,7 +179,7 @@ section {
 }
   
 #section2 {
-    background-color: #eee;
+    background-color: #fff;
     
 }
 
@@ -209,7 +209,13 @@ section {
 .mainLogo{
     margin:auto auto auto auto;
 }
-
+.carouselDiv{
+    background-color: #eee;
+    margin-top:-50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
 footer {
 	background-color:#2b2b2b;
     color:#ddd;
