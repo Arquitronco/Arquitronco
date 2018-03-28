@@ -9,6 +9,11 @@ html,body {
 
 
 @media (min-width:800px) {
+    @media (max-height:910px){
+        body{
+            font-size:10px;
+        }
+    }
     html,body{
             background:center no-repeat fixed url('../images/fondo1.jpg');
 
