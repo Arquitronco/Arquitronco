@@ -11,7 +11,7 @@ html,body {
 @media (min-width:800px) {
     @media (max-height:910px){
         body{
-            font-size:10px;
+            font-size:12px;
         }
     }
     html,body{
